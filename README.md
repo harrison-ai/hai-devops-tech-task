@@ -7,8 +7,6 @@ You should take a copy of this repo, implement your solution for each question, 
 * @rfk
 * @comozo
 * @js-ami
-* @schattingh
-* @dcarrion87
 * @daniellohrey-hai
 
 ## Question One
