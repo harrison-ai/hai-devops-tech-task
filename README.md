@@ -61,10 +61,12 @@ Commit the solution to your copy of this GitHub repository, and push it for revi
 
 ## Question Three (for discussion during the interview)
 
-
 **This question will be asked and discussed during the interview**.
 It is provided here to allow time for any background reading or research that may be required.
 Please feel free to add notes or comments in your copy of this GitHub repo for reference,
 but this is not required.
 
-You have an S3 bucket that contains 3 billion objects with an average size of 100KB, in the `STANDARD` Storage Class.  You are tasked with moving all objects in the bucket to the `GLACIER` Storage Class.  Describe how you would achieve this, providing justifications for the design decisions you made.
+You have an S3 bucket that contains 3 billion objects with an average size of 100KB, in the `STANDARD` Storage Class.
+You are tasked with moving all data in the bucket to the `GLACIER` Storage Class as a cost-saving measure.
+Describe how you would achieve this, providing a summary of the expected cost savings and justifications for
+the design decisions you made.
