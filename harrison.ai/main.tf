@@ -1,7 +1,6 @@
 resource "aws_s3_bucket" "this" {
-  provide = "harrison-ai"
-  bucket = "harrison-ai-landing"
-  acl    = "private"
+  bucket  = "harrison-ai-landing"
+  acl     = "private"
 
   server_side_encryption_configuration {
     rule {
@@ -13,7 +12,6 @@ resource "aws_s3_bucket" "this" {
 }
 
 resource "aws_s3_bucket_public_access_block" "this" {
-  provide = "harrison-ai"
   bucket                  = aws_s3_bucket.this.id
   block_public_acls       = true
   block_public_policy     = true
@@ -22,14 +20,16 @@ resource "aws_s3_bucket_public_access_block" "this" {
 }
 
 resource "aws_kms_key" "objects" {
-  provide = "annalise-ai"
   description             = "KMS key is used to encrypt bucket objects"
   deletion_window_in_days = 7
+
+    providers = {
+    aws = aws.annalise-ai
+  }
 }
 
 module "s3_bucket" {
   source  = "terraform-aws-modules/s3-bucket/aws"
-  provide = "annalise-ai"
   bucket = local.bucket_name
 
   # S3 bucket-level Public Access Block configuration
@@ -77,6 +77,10 @@ module "s3_bucket" {
         }
       }
     }
+  }
+  
+  providers = {
+    aws = aws.annalise-ai
   }
 
 }

@@ -10,11 +10,10 @@ terraform {
 provider "aws" {
   alias   = "harrison-ai"
   region  = local.region
-  profile = local.profile1
 }
 
 provider "aws" {
   alias   = "annalise-ai"
   region  = local.region
-  profile = local.profile2
+  profile = local.profile
 }
