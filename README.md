@@ -2,12 +2,15 @@
 
 This is a technical assessment task for DevOps-related roles at [harrison.ai](harrison.ai). There are three questions, each outlined below.
 
-You should take a copy of this repo, implement your solution for each question, and push them to GitHub for review and discussion in a follow-up interview. You're welcome to use a private repository, as long as it is visible to the following users:
+You should **take a copy of this repo**, implement your solution for each question, and push them to GitHub for review and discussion in a follow-up interview. You're welcome to use a private repository, as long as it is visible to the following users:
 
 * @rfk
 * @comozo
 * @js-ami
 * @daniellohrey-hai
+* @timleslie
+* @peasee
+
 
 ## Question One
 
