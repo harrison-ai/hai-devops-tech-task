@@ -9,7 +9,6 @@ You should **take a copy of this repo**, implement your solution for each questi
 * @js-ami
 * @daniellohrey-hai
 * @timleslie
-* @peasee
 
 
 ## Question One
